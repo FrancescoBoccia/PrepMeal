@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Calendar</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  
+    <!-- Fixed Header with Arrow and Burger Text -->
+    <header class="header">
+      <a href="/index.html" class="back-arrow">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <h1 class="burger-title">
+        CALENDAR
+      </h1>
+    </header>
+
+  <!-- Unscheduled Meals Section -->
+  <div class="unscheduled-meals">
+    <h4>Unscheduled Meals</h4>
+  </div>
+
+  <!-- Calendar Section -->
+  <div class="calendar">
+    <!-- Days of the week -->
+    <div class="day" data-day="Monday">
+      Monday
+      <span class="total-calories">0 kcal</span> <!-- Display calories below each day -->
+    </div>
+    <div class="day" data-day="Tuesday">
+      Tuesday
+      <span class="total-calories">0 kcal</span>
+    </div>
+    <div class="day" data-day="Wednesday">
+      Wednesday
+      <span class="total-calories">0 kcal</span>
+    </div>
+    <div class="day" data-day="Thursday">
+      Thursday
+      <span class="total-calories">0 kcal</span>
+    </div>
+    <div class="day" data-day="Friday">
+      Friday
+      <span class="total-calories">0 kcal</span>
+    </div>
+    <div class="day" data-day="Saturday">
+      Saturday
+      <span class="total-calories">0 kcal</span>
+    </div>
+    <div class="day" data-day="Sunday">
+      Sunday
+      <span class="total-calories">0 kcal</span>
+    </div>
+  </div>
+
+  <button id="save-calendar">Save Calendar</button>
+
+<!-- Navigation Bar -->
+<footer class="nav-bar">
+  <a href="/index.html" id="home-link">
+      <button class="nav-btn" id="home-btn">
+          <div class="icon-container">
+           <span class="icon"><i class="material-icons">home</i></span>
+          </div>
+          <span class="page-name">Home</span>
+      </button>
+  </a>
+  <a href="/Recipe/Recipes.html" id="recipe-link">
+      <button class="nav-btn" id="recipe-btn">
+          <div class="icon-container">
+           <span class="icon"><i class="material-icons">search</i></span>
+         </div>
+          <span class="page-name">Recipes</span>
+      </button>
+  </a>
+  <a href="/MyList/MyListPage.html" id="mylist-link">
+    <button class="nav-btn" id="mylist-btn">
+      <div class="icon-container">
+        <span class="icon"><i class="material-icons">kitchen</i></span>
+       </div>
+     </button>
+   </a>
+   <a href="/Calendar/calendar.html" id="calendar-link">
+       <button class="nav-btn" id="calendar-btn">
+           <div class="icon-container">
+            <span class="icon"><i class="material-icons">calendar_month</i></span>
+           </div>
+           <span class="page-name">Calendar</span>
+       </button>
+   </a>
+  <a href="/User/SetProfileUser.html" id="account-link">
+      <button class="nav-btn" id="account-btn">
+          <div class="icon-container">
+<span class="icon"><i class="material-icons">account_circle</i></span>
+          </div>
+          <span class="page-name">Account</span>
+      </button>
+  </a>
+</footer>
+
+  <script src="calendar.js"></script>
+  <script src="/General.js"></script>
+</body>
+</html>

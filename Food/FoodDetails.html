@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Detail</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="burger-detail-page">
+
+    <!-- Burger Image -->
+    <header>
+       <div class="burger-image" id="back-home">
+         <a href="/Recipe/Recipes.html" class="back-arrow-detail">
+           <i class="fas fa-arrow-left"></i>
+         </a>
+         <img src="" alt="Burger Image" id="burger-image">
+       </div>
+     </header>
+       
+
+    <!-- Burger Info -->
+    <div class="burger-info">
+      <h1 id="burger-name"></h1>
+      <p id="burger-calories"></p>
+
+      <!-- Rating Section -->
+      <div class="rating">
+        <span class="star">★</span>
+        <p id="rating-info"></p>
+      </div>
+
+      <!-- Nutritional Info -->
+      <div class="nutrition">
+        <p id="nutrition-info"></p>
+      </div>
+
+      <!-- Ingredients Section -->
+      <div class="ingredients">
+        <p><strong>Ingredients</strong></p>
+        <ul id="ingredients-list"></ul>
+      </div>
+
+      <!-- Cooking Instructions -->
+      <div class="instructions">
+        <p><strong>Cooking Instructions:</strong></p>
+        <ol id="instructions-list"></ol>
+      </div>
+
+      <!-- Schedule Meal Button -->
+      <div class="schedule-button">
+        <button class="schedule-btn">Schedule Your Meal</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="FoodDetails.js"></script>
+</body>
+</html>

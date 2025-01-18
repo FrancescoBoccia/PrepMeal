@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Profile</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- FontAwesome for the back arrow -->
+</head>
+<body>
+
+
+  <div class="profile-container">
+    
+    <!-- Profile Header -->
+    <header class="profile-header">
+      <a href="/index.html" class="back-arrow">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <h1>Your Profile</h1>
+    </header>
+
+<!-- Profile Form -->
+<div class="profile-form">
+  <div class="profile-image">
+    <img src="Profile Image.jpg" alt="Profile Image" class="profile-img" id="profile-img">
+    <div class="edit-icon" id="edit-icon">
+      <i class="fas fa-edit"></i>
+    </div>
+    <input type="file" id="image-input" accept="image/*" style="display: none;">
+  </div>
+</div>
+
+
+<div class="form-container">
+
+  <!-- Phone Number with Country Code -->
+  <div class="form-group phone-group">
+    <div class="phone-input-wrapper">
+      <div class="country-code-dropdown" id="country-code-dropdown">
+        <img id="selected-flag" src="https://flagcdn.com/us.svg" alt="USA Flag">
+        <span id="selected-code">+1</span>
+        <i class="dropdown-arrow"></i>
+      </div>
+      <input type="tel" id="phone" placeholder="Phone number">
+    </div>
+    <ul class="country-code-list" id="country-code-list">
+      <!-- Country Code List -->
+      <li data-value="+1" data-flag="https://flagcdn.com/us.svg">
+        <img src="https://flagcdn.com/us.svg" alt="USA Flag"> +1
+      </li>
+      <li data-value="+44" data-flag="https://flagcdn.com/gb.svg">
+        <img src="https://flagcdn.com/gb.svg" alt="UK Flag"> +44
+      </li>
+      <li data-value="+91" data-flag="https://flagcdn.com/in.svg">
+        <img src="https://flagcdn.com/in.svg" alt="India Flag"> +91
+      </li>
+      <li data-value="+61" data-flag="https://flagcdn.com/au.svg">
+        <img src="https://flagcdn.com/au.svg" alt="Australia Flag"> +61
+      </li>
+      <li data-value="+81" data-flag="https://flagcdn.com/jp.svg">
+        <img src="https://flagcdn.com/jp.svg" alt="Japan Flag"> +81
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Email -->
+  <div class="form-group">
+    <input type="email" id="email" placeholder="E-mail">
+  </div>
+
+  <!-- Username -->
+  <div class="form-group">
+    <input type="text" id="username" placeholder="Username">
+  </div>
+
+  <!-- Date of Birth -->
+  <div class="form-group">
+    <label for="dob">
+    </label>
+    <input type="date" id="dob">
+  </div>
+
+
+
+
+  <!-- Gender -->
+  <div class="form-group">
+    <select id="gender" name="gender" class="gender-select">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+  </div>
+  
+  <!-- Location -->
+  <div class="form-group">
+    <label for="location">
+    </label>
+    <input type="text" id="location" placeholder="Your location">
+  </div>
+</div>
+
+
+      <!-- Save Button -->
+      <button class="save-btn">Continue</button>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="ProfileUser.js"></script>
+</body>
+</html>

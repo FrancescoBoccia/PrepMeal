@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Page</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Burger Page Structure -->
+  <div class="burger-page">
+
+    <!-- Fixed Header with Arrow and Burger Text -->
+    <header class="header">
+      <a href="/index.html" class="back-arrow">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <h1 class="burger-title">
+        RECIPES
+      </h1>
+    </header>
+
+    <div class="food-category-grid">
+      <button class="food-btn">
+        <span class="food-icon">🍔</span>
+        <span>Burger</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🌮</span>
+        <span>Taco</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🌯</span>
+        <span>Burrito</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🥤</span>
+        <span>Drink</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🍕</span>
+        <span>Pizza</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🍩</span>
+        <span>Donut</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🥗</span>
+        <span>Salad</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🍜</span>
+        <span>Noodles</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🥪</span>
+        <span>Sandwich</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🍝</span>
+        <span>Pasta</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🍨</span>
+        <span>Ice Cream</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🍲</span>
+        <span>Soup</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🥩</span>
+        <span>Steak</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🍚</span>
+        <span>Rice</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🐟</span>
+        <span>Fish</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🍉</span>
+        <span>Fruit</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🍛</span>
+        <span>Curry</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🥤</span>
+        <span>Shakes</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🥪</span>
+        <span>Sandwich</span>
+      </button>
+      <button class="food-btn">
+        <span class="food-icon">🥞</span>
+        <span>Pancakes</span>
+      </button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-section">
+      <div class="search-container">
+        <i class="search-icon"></i>
+        <input type="text" id="burger-search" class="search-bar" placeholder="Search for food...">
+      </div>
+    </div>
+
+    
+
+    <!-- Scrollable Grid Section for Burgers -->
+    <section class="burger-grid-container">
+      <div class="burger-grid recipe-grid">
+      </div>
+    </section>
+  </div>
+
+<!-- Navigation Bar -->
+<footer class="nav-bar">
+  <a href="/index.html" id="home-link">
+      <button class="nav-btn" id="home-btn">
+          <div class="icon-container">
+           <span class="icon"><i class="material-icons">home</i></span>
+          </div>
+          <span class="page-name">Home</span>
+      </button>
+  </a>
+  <a href="/Recipe/Recipes.html" id="recipe-link">
+      <button class="nav-btn" id="recipe-btn">
+          <div class="icon-container">
+           <span class="icon"><i class="material-icons">search</i></span>
+         </div>
+          <span class="page-name">Recipes</span>
+      </button>
+  </a>
+  <a href="/MyList/MyListPage.html" id="mylist-link">
+    <button class="nav-btn" id="mylist-btn">
+      <div class="icon-container">
+        <span class="icon"><i class="material-icons">kitchen</i></span>
+       </div>
+     </button>
+   </a>
+   <a href="/Calendar/calendar.html" id="calendar-link">
+       <button class="nav-btn" id="calendar-btn">
+           <div class="icon-container">
+            <span class="icon"><i class="material-icons">calendar_month</i></span>
+           </div>
+           <span class="page-name">Calendar</span>
+       </button>
+   </a>
+  <a href="/User/SetProfileUser.html" id="account-link">
+      <button class="nav-btn" id="account-btn">
+          <div class="icon-container">
+<span class="icon"><i class="material-icons">account_circle</i></span>
+          </div>
+          <span class="page-name">Account</span>
+      </button>
+  </a>
+</footer> 
+
+  <script src="Recipe.js"></script>
+  <script src="/General.js"></script>
+</body>
+</html>
